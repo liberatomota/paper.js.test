@@ -90,6 +90,10 @@ export default class Editor {
             return;
         }
 
+        this.removeItemFromGrid(this.p1);
+        this.p1.remove();
+        paper.view.update();
+
         // const circle = new paper.Path.Circle({
         //     center: point,
         //     radius: 10,
